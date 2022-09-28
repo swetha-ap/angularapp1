@@ -1,0 +1,14 @@
+ul{
+    background-color: rgb(14, 14, 51);
+    
+}
+
+li{
+    color:white;
+    list-style-type: none;
+    display: inline-block;
+}
+img{
+    height: 80px;
+    
+}

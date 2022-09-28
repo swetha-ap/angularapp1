@@ -1,0 +1,21 @@
+.card{
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 60px;
+}
+#i1{
+    height: 50px;
+    width: 100px;
+}
+#i2{
+    height: 50px;
+    width: 100px;
+}
+#i3{
+    height: 50px;
+    width: 100px;
+}
+#i4{
+    height: 50px;
+    width: 100px;
+}
