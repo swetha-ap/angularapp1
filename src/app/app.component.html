@@ -1,8 +1,74 @@
-<div class="container">
+<!-- <div class="container">
   <div class="row"><navigbar></navigbar></div>
   <div class="row"><imagebar></imagebar></div>
   <div class="row"><coursebar></coursebar></div>
   <div class="row"><activitybar></activitybar></div>
   <div class="row"><placedbar></placedbar></div>
   <div class="row"><footer></footer></div>
+</div> -->
+
+                 <!-- *ngFor -->
+<!-- array format -->
+<!-- <ul *ngFor ="let item of arr1">
+  <li>{{item}}</li>
+</ul> -->
+<!-- json ie key-value pair -->
+<!-- <div *ngFor = "let product of products">
+  <p>{{product.pname}},{{product.pprice}}</p>
+  <p>{{product.pqty}}</p>
+</div> -->
+
+                  <!-- *ngif -->
+<!-- <div>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+  A eius dignissimos omnis quibusdam, tenetur error.
+</div> -->
+<!--if isauthenticated true,this div will be shown-->
+<!-- <div id="d2" *ngIf="isAuthenticated"> 
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+  Dolorum magnam omnis sed earum, excepturi exercitationem<br>
+   assumenda autem ipsa et hic?
+</div> -->
+
+                     <!--*ngSwitch-->
+
+<!-- <div [ngSwitch]="item">
+   <p id="p1" *ngSwitchCase="'p1'">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, tenetur!</p>
+   <p id="p2" *ngSwitchCase="'p2'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, sequi!</p>
+   <p id="p3" *ngSwitchCase="'p3'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, deleniti.</p>
+</div> -->
+
+                      <!--TEMPLATES nad ngIf-->
+<div *ngIf="var1;then v1 else v2">  <!-- if-else written inside "" of IFstmt --> 
+  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, blanditiis. -->
 </div>
+<ng-template #v1>
+   First Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, quisquam?
+</ng-template>
+<ng-template #v2>
+   Second how are you ,como esta senor,kaisa hai
+</ng-template>
+
+
+                           <!--PROPERTY BINDING-->
+  <button [disabled]="var1">SUBMIT</button> <!--when true button is disabled else enabled-->
+
+                           <!--ATTRIBUTE BINDING-->
+  <table border="1">
+    <tr>
+      <td [attr.colspan]="2">hello</td> <!--atrribute binding-->
+    </tr>
+    <tr>
+      <td>hi</td>
+      <td>namaste</td>
+    </tr>
+  </table>
+
+                             <!--STYLE BINDING-->
+  <div [style.color]="'red'">
+    im good
+  </div>
+  <div [style.color]="color"> <!--using variable in ts-->
+    namskar
+  </div>
+  <p [style.font-size]="isboolean?'80px':'10px'">how u</p> <!--if boolean variable in 'ts' true then font size changes to 80px else 10px-->
