@@ -44,4 +44,21 @@ export class AppComponent {
   color="blue";
 
   isboolean=true ;
+  // isboolean=false ;
+
+
+                        //ONE WAY EVENT BINDING
+  bclick(){
+    alert("button clicked");
+  }
+
+  display(a:any){
+     console.log(a);
+  }
+                     //TWO WAY BINDING
+username="";
+colour="";
+
 }
+
+             

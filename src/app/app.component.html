@@ -39,36 +39,83 @@
 </div> -->
 
                       <!--TEMPLATES nad ngIf-->
-<div *ngIf="var1;then v1 else v2">  <!-- if-else written inside "" of IFstmt --> 
+<!--<div *ngIf="var1;then v1 else v2"> --> <!-- if-else written inside "" of IFstmt --> 
   <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, blanditiis. -->
-</div>
+<!-- </div>
 <ng-template #v1>
    First Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, quisquam?
 </ng-template>
 <ng-template #v2>
    Second how are you ,como esta senor,kaisa hai
-</ng-template>
+</ng-template> -->
 
 
                            <!--PROPERTY BINDING-->
-  <button [disabled]="var1">SUBMIT</button> <!--when true button is disabled else enabled-->
+  <!--<button [disabled]="var1">SUBMIT</button>--> <!--when true button is disabled else enabled-->
 
                            <!--ATTRIBUTE BINDING-->
-  <table border="1">
-    <tr>
-      <td [attr.colspan]="2">hello</td> <!--atrribute binding-->
-    </tr>
+  <!-- <table border="1">
+    <tr> -->
+      <!--<td [attr.colspan]="2">hello</td>--> <!--atrribute binding-->
+    <!-- </tr>
     <tr>
       <td>hi</td>
       <td>namaste</td>
     </tr>
-  </table>
+  </table> -->
 
                              <!--STYLE BINDING-->
-  <div [style.color]="'red'">
+  <!-- <div [style.color]="'red'">
     im good
-  </div>
-  <div [style.color]="color"> <!--using variable in ts-->
+  </div> -->
+  <!--  using variable in ts -->
+  <!-- <div [style.color]="color">
     namskar
+  </div> -->
+  <!--<p [style.font-size]="isboolean?'80px':'10px'">how u</p>--> <!--if boolean variable in 'ts' true then font size changes to 80px else 10px-->
+
+
+                              <!--CLASS BINDING-->
+  <!--<div [class.c1]="isboolean">--> <!--class binding via a conditional stmt-->
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Corporis, ipsum nostrum? Necessitatibus, repudiandae reiciendis. 
+      Cupiditate voluptas maxime reprehenderit exercitationem pariatur!</p>
+  </div><br> -->
+  <!--<div [ngClass]="isboolean?'c2':'c1'">--><!--if isboolean true then css of c2 is applied else that of c1 -->
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Ea dolore quis corrupti corporis voluptatibus fugiat.</p>
+  </div> -->
+
+                               <!--ONE WAY DB & EVENT BINDING-->
+  <!--<button class="btn btn-primary" (click)="bclick()">click</button>--> <!--bootstrap + event binding-->
+  <!-- <br><br> -->
+ <!-- <input type="text" name="" id="" placeholder="" #text1>--> <!--template ref var-->
+  <!--<button class="btn btn-info" (click)="display(text1.value)">SUBMIT</button>--><!--event binding using ref var-->
+  <!-- <br><br> -->
+
+                               <!--TWO WAY DB-->
+  <!-- <input type="text" name="" id="" placeholder="" #text2 [(ngModel)]="username">
+  <p>{{username}}</p>
+  <br><br> -->
+  <!--formatting font color of div acc to option selected in selector-->
+  <!-- <select class="form-control w-25" name="" id="" [(ngModel)]="colour">
+    <option value="red">red</option>
+    <option value="blue">blue</option>
+    <option value="green">green</option>
+  </select>
+  <div [style.color]="colour">
+     <p>hello</p>
+  </div> -->
+
+
+
+
+  <div class="container">
+    <a [routerLink]="'home'">home</a>
+    <a [routerLink]="'about'">about</a>
+    <a [routerLink]="'contact'">contact</a>
   </div>
-  <p [style.font-size]="isboolean?'80px':'10px'">how u</p> <!--if boolean variable in 'ts' true then font size changes to 80px else 10px-->
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+ 

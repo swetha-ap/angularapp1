@@ -10,6 +10,11 @@ import { CoursebarComponent } from './coursebar/coursebar.component';
 import { ActivitybarComponent } from './activitybar/activitybar.component';
 import { PlacedbarComponent } from './placedbar/placedbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductpageComponent } from './productpage/productpage.component';
+import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +25,16 @@ import { FooterComponent } from './footer/footer.component';
     CoursebarComponent,
     ActivitybarComponent,
     PlacedbarComponent,
-    FooterComponent
+    FooterComponent,
+    ProductpageComponent,
+    AboutComponent,
+    ContactComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

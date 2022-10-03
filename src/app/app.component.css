@@ -1,4 +1,4 @@
-#d2{
+/* #d2{
     background-color: brown;
     width:200px;
 }
@@ -13,4 +13,11 @@
 #p3{
     background-color: crimson;
     width:200px;
+} */
+
+.c1 p{
+color:red;
+}
+.c2 p{
+    color:blue;
 }
