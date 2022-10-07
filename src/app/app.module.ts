@@ -15,6 +15,9 @@ import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { SortPipe } from './pipes/sort'; 
+import { SplChar } from './pipes/splchar';
+import { ChecktokenService } from './services/services/checktoken.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     ProductpageComponent,
     AboutComponent,
     ContactComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    SortPipe,
+    SplChar,
+    ChecktokenService
   ],
   imports: [
     BrowserModule,

@@ -115,6 +115,10 @@
     <a [routerLink]="'about'">about</a>
     <a [routerLink]="'contact'">contact</a>
   </div>
+  <p>names in order {{kids|sort:"ascending"}}</p>
+  <p>nos in order {{nos|sort:"descending"}}</p>
+  <p>proper string : {{uname|trim}}</p>
+
   <div>
     <router-outlet></router-outlet>
   </div>

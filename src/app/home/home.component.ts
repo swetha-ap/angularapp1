@@ -11,5 +11,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  // angular pipes
+  username="john";
+  today=Date.now();
+  money=3000;
 }
