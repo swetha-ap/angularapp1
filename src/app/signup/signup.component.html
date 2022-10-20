@@ -1,0 +1,26 @@
+<!-- <p>signup works!</p> -->
+<form action="" #signupform="ngForm" (ngSubmit)="signup(signupform)">
+    <input type="text" #name="ngModel" name="name" id="" pattern="[A-Z a-z]+" placeholder="enter name" ngModel required><br>
+    <span *ngIf="name.errors?.['pattern'] && name.touched">please enter valid name</span><br> <!--Validation-->
+    
+    <input type="text" #addr="ngModel" name="address" id="" placeholder="enter address" ngModel><br>
+    <span *ngIf="addr.untouched">address required</span><br>
+    
+    <input type="email" #email="ngModel" email name="email" id="" placeholder="enter email" ngModel required><br>
+    <!-- <span *ngIf="email.pristine">email mandatory</span><br> -->
+    <div *ngIf="!email.valid && email.touched">
+        <span *ngIf="email.errors?.['required']">enter email field</span>
+        <span *ngIf="email.errors?.['email']">email invalid</span>
+    </div>
+    
+    <input type="text" #phno="ngModel" name="phone" pattern="[0-9]{10}" id="" placeholder="enter phone" ngModel><br>
+    <span *ngIf="phno.errors?.['pattern']">phoneno should not exceed 10</span><br>
+    
+    <input type="text" #uname="ngModel" name="username" id="" placeholder="enter username" ngModel><br>
+    <span *ngIf="uname.pristine">username needed</span><br>
+    
+    <input type="text" #pswd="ngModel" name="password" id="" placeholder="enter password" ngModel><br>
+    <span *ngIf="pswd.touched">password needed</span><br>
+    <button type="submit">sign up</button>
+</form>
+<p>{{ signupform.value | json }}</p><!-- to print values as key-value pair -->

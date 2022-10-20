@@ -18,6 +18,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { SortPipe } from './pipes/sort'; 
 import { SplChar } from './pipes/splchar';
 import { ChecktokenService } from './services/services/checktoken.service';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+ 
 
 @NgModule({
   declarations: [
@@ -35,14 +38,15 @@ import { ChecktokenService } from './services/services/checktoken.service';
     PagenotfoundComponent,
     SortPipe,
     SplChar,
-    ChecktokenService
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ChecktokenService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

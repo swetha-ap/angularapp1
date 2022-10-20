@@ -11,7 +11,7 @@ export class LoginguardGuard implements CanActivate {
   constructor(private authguardservice:ChecktokenService,private router:Router){}
   canActivate():boolean{
     if(!this.authguardservice.gettoken()){
-      this.router.navigateByUrl("");
+      this.router.navigateByUrl("/about");
     }
     return this.authguardservice.gettoken();
   }

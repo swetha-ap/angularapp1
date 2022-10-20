@@ -63,6 +63,8 @@ colour="";
 kids=["nitin","rohan","kaushik","sidharth"];
 nos=[4,2,7,8];
 uname="@#$h@i s#@*&wet%ha@";
+
+
 }
 
              
