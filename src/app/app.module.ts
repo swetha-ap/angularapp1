@@ -11,7 +11,7 @@ import { ActivitybarComponent } from './activitybar/activitybar.component';
 import { PlacedbarComponent } from './placedbar/placedbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductpageComponent } from './productpage/productpage.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -20,6 +20,7 @@ import { SplChar } from './pipes/splchar';
 import { ChecktokenService } from './services/services/checktoken.service';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
  
 
 @NgModule({
@@ -39,12 +40,14 @@ import { SignupComponent } from './signup/signup.component';
     SortPipe,
     SplChar,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    ReactiveformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ChecktokenService],
   bootstrap: [AppComponent]

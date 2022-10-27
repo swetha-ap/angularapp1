@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 const routes: Routes = [
   { path:'home',component:HomeComponent,canActivate:[LoginguardGuard] },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path:'contact',component:ContactComponent},
   { path:'login',component:LoginComponent},
   { path:'signup',component:SignupComponent},
+  { path:'rf',component:ReactiveformComponent},
   { path:'**',component:PagenotfoundComponent} //wildcard route only set at the end of other routes
 ];
 

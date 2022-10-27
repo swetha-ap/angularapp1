@@ -1,0 +1,27 @@
+<form [formGroup]="loginform">
+    <input type="text" class="form-control" formControlName="username" name="" id="" placeholder="enter name"><br><br>
+    <div *ngIf="getusername!.touched && getusername!.invalid ">
+      <span *ngIf="loginform.controls.username.errors?.['required']">username required</span>
+      <span *ngIf="loginform.controls.username.errors?.['containSpace']">no space allowed</span>
+      <span *ngIf="loginform.controls.username.errors?.['nosplchar']">no special char allowed</span>
+    </div>
+    
+    <input type="text" class="form-control" formControlName="address" name="" id="" placeholder="enter address"><br><br>
+    <span *ngIf=""></span>
+    
+    <input type="text" class="form-control" formControlName="email" name="" id="" placeholder="enter email"><br><br>
+    <span *ngIf="getemail!.touched && getemail!.invalid">Email mandatory</span>
+    
+    <input type="text" class="form-control" formControlName="password" name="" id="" placeholder="enter password"><br><br>
+    <div *ngIf="getpassword!.touched && getpassword!.invalid ">
+        <span *ngIf="loginform.controls.password.errors?.['required']">password compulsory</span>
+        <span *ngIf="loginform.controls.password.errors?.['minlength']">mnm 8 char req</span>
+    </div>  
+    
+    <input type="text" class="form-control" formControlName="phone" name="" id="" placeholder="enter phone"><br>
+    <div *ngIf="getphone!.touched && getphone!.invalid ">
+        <span *ngIf="loginform.controls.phone.errors?.['required']">phone compulsory</span>
+        <span *ngIf="loginform.controls.phone.errors?.['pattern']">invalid phone</span>
+    </div> 
+    <button type="submit">submit</button>
+</form>
