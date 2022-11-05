@@ -119,7 +119,12 @@
   <p>nos in order {{nos|sort:"descending"}}</p>
   <p>proper string : {{uname|trim}}</p> -->
 
-  <div>
+  <!-- <div>
     <router-outlet></router-outlet>
   </div>
- 
+
+  <button type="submit" [routerLink]="'a'">modA</button> -->
+
+  <home [datafromparent]="childname" (event)="data_parent($event)"></home>
+  {{mesg}}
+  

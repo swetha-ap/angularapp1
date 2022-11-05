@@ -64,7 +64,13 @@ kids=["nitin","rohan","kaushik","sidharth"];
 nos=[4,2,7,8];
 uname="@#$h@i s#@*&wet%ha@";
 
-
+childname="data from parent to home child";
+mesg="";
+data_parent(event:any){
+  // console.log(event);
+  // alert(event);
+  this.mesg=event;
+}
 }
 
              

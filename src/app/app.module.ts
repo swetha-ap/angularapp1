@@ -21,6 +21,7 @@ import { ChecktokenService } from './services/services/checktoken.service';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+
  
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
     SplChar,
     LoginComponent,
     SignupComponent,
-    ReactiveformComponent
+    ReactiveformComponent,
+    
   ],
   imports: [
     BrowserModule,

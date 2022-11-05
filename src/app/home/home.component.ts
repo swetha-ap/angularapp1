@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input,Output ,EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'home',
@@ -15,4 +15,11 @@ export class HomeComponent implements OnInit {
   username="john";
   today=Date.now();
   money=3000;
+
+  @Input()datafromparent:string="";
+
+  @Output()event=new EventEmitter();
+  parentdata(){
+    this.event.emit("data from child to parent");
+  }
 }

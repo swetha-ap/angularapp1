@@ -17,6 +17,8 @@ const routes: Routes = [
   { path:'login',component:LoginComponent},
   { path:'signup',component:SignupComponent},
   { path:'rf',component:ReactiveformComponent},
+  { path: 'a', loadChildren: () => import('./module-a/module-a.module').then(m => m.ModuleAModule) },
+  { path: 'b', loadChildren: () => import('./module-b/module-b.module').then(m => m.ModuleBModule) },
   { path:'**',component:PagenotfoundComponent} //wildcard route only set at the end of other routes
 ];
 
