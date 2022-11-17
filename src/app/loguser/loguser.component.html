@@ -1,0 +1,29 @@
+<mat-card class="login">
+    <mat-card-header>
+      <div mat-card-avatar class=""></div>
+      <mat-card-title>login</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+    <mat-card-content>
+      <form action="" class="example-form">
+        <!-- username -->
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your username</mat-label>
+            <input matInput placeholder="username" type="text" >
+            <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+          </mat-form-field>
+          <br>
+          <!-- password -->
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your password</mat-label>
+            <input matInput placeholder="password" type="password" >
+            <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+          </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="log()">Login</button>
+      <button mat-button color="warn">cancel</button>
+    </mat-card-actions>
+  </mat-card>

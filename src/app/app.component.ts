@@ -1,5 +1,13 @@
 import { Component } from '@angular/core';
 
+// grid tile
+export interface tile{
+  color:string,
+  rows:number,
+  cols:number,
+  text:string
+}
+
 @Component({
   selector: 'common',
   templateUrl: './app.component.html',
@@ -7,6 +15,8 @@ import { Component } from '@angular/core';
   // <p>how are you</p>`,
   styleUrls: ['./app.component.css']
 })
+ 
+
 export class AppComponent {
   title = 'app1';
           //ngFor EGS
@@ -71,6 +81,14 @@ data_parent(event:any){
   // alert(event);
   this.mesg=event;
 }
+
+// grid tiles 
+tiles:tile[]=[
+  {text:'one',rows:1,cols:3,color:'lightpink'},
+  {text:'two',rows:2,cols:1,color:'lightblue'},
+  {text:'three',rows:1,cols:1,color:'green'},
+  {text:'four',rows:1,cols:2,color:'brown'},
+];
 }
 
              

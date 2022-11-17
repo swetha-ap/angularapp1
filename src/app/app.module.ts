@@ -21,8 +21,9 @@ import { ChecktokenService } from './services/services/checktoken.service';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { AngularmaterialModule } from './angularmaterial/angularmaterial.module';
+import { LoguserComponent } from './loguser/loguser.component';
 
- 
 
 @NgModule({
   declarations: [
@@ -43,13 +44,15 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
     LoginComponent,
     SignupComponent,
     ReactiveformComponent,
+    LoguserComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularmaterialModule
   ],
   providers: [ChecktokenService],
   bootstrap: [AppComponent]
